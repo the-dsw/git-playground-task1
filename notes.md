@@ -1,6 +1,6 @@
 ## My prediction
 
-TODO: write one line, from memory, predicting what you changed.
+I changed the empty-list message in `notes.js`, added a `count()` helper to `lib/store.js`, and bumped the session timeout in `lib/config.js`.
 
 ## Claude's summary
 
@@ -18,4 +18,4 @@ Flagged as possibly unintended:
 
 ## Did Claude catch the stray change?
 
-TODO: add a sentence on whether the summary caught the stray change.
+Yes, the summary caught the stray change: it flagged the `SESSION_TIMEOUT_MINUTES` edit in `lib/config.js` (15 to 30) as unrelated to the other edits, and it also flagged the placeholder-style message in `notes.js`.
